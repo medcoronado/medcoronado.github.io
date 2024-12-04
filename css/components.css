@@ -1,0 +1,238 @@
+.logo-size {
+  height: 2rem;
+  width: 2rem;
+}
+
+.contact-email {
+  font-size: 1.5rem;
+}
+
+.project-icon {
+  height: 2rem;
+}
+
+.icon-btn i {
+  font-size: 10px;
+  width: 10px;
+  height: 10px;
+}
+
+.skills-icons {
+  height: 2.5rem;
+}
+
+.pic-martin {
+  height: 19rem;
+  width: 19rem;
+}
+
+.img-nox {
+  width: 33.6rem;
+  height: 17rem;
+  background-image: url("/images/projects/nox.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.img-nox:hover {
+  width: 33.6rem;
+  height: 17rem;
+  background-image: url("/images/projects/noxhover.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+.img-passgenx {
+  width: 33.6rem;
+  height: 17rem;
+  background-image: url("/images/projects/passgenx.PNG");
+  background-size: cover;
+  background-position: center;
+}
+
+.img-passgenx:hover {
+  width: 33.6rem;
+  height: 17rem;
+  background-image: url("/images/projects/passgenx-hover.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+.img-portfolio-med {
+  width: 33.6rem;
+  height: 17rem;
+  background-image: url("/images/projects/portfolio.PNG");
+  background-size: cover;
+  background-position: center;
+}
+
+.img-portfolio-med:hover {
+  width: 33.6rem;
+  height: 17rem;
+  background-image: url("/images/projects/Portfolio\ MED.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+.rounded-cosas {
+  border-radius: 0.6rem !important;
+}
+
+.btn-tag {
+  position: absolute;
+  top: 15rem;
+  right: 1rem;
+  z-index: 10;
+}
+
+.btn-github {
+  position: absolute;
+  top: 22rem;
+  right: 1rem;
+  z-index: 10;
+}
+
+.background-color-terminal {
+  background-color: #181b26 !important;
+}
+
+.terminal-top {
+  color: #d9d9d9 !important;
+}
+
+.terminal-hello {
+  color: #ffff00 !important;
+}
+
+.terminal-contact {
+  color: #61cbf4 !important;
+}
+
+.terminal-objetive {
+  color: #47d45a !important;
+}
+
+.terminal-skills {
+  color: #ffc000 !important;
+}
+
+.terminal-interest {
+  color: #ff65a0 !important;
+}
+
+.terminal-error {
+  color: #ff0000 !important;
+}
+
+.form-controlterminal {
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #ffffff;
+  background-clip: padding-box;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-controlterminal:focus {
+  color: #ebebeb;
+  outline: 0;
+}
+.form-controlterminal::placeholder {
+  color: #424c6a;
+  font-style: italic;
+  opacity: 1;
+}
+
+.card-terminal {
+  padding: 0.1rem 0.25rem;
+  margin-bottom: 0;
+  background-color: rgba(113, 145, 242, 0.2);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.card-terminal:first-child {
+  border-radius: calc(0.25rem - 1px) calc(0.25rem - 1px) 0 0;
+}
+.card-terminal + .list-group .list-group-item:first-child {
+  border-top: 0;
+}
+
+.row-terminal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.transparente {
+  background-color: #181b2600;
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #606e99;
+  border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #363f5b;
+}
+
+/*Input Terminal*/
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.form-controlterminal {
+  flex: 1;
+  background: none;
+  border: none;
+  color: #d9d9d9;
+}
+
+#toggle-button {
+  cursor: pointer;
+  order: 2;
+}
+
+.navbar-toggler-custom {
+  order: 3;
+}
+
+.text-limit {
+  display: inline-block;
+  max-width: 25rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/*Terminal*/
+.input-container {
+  display: flex;
+  align-items: center;
+}
+
+.form-controlterminal {
+  flex: 1;
+  background: none;
+  border: none;
+  color: #d9d9d9;
+}

@@ -1,0 +1,266 @@
+/* Oculto el body hasta que la pagina este lista gg */
+body {
+    display: none;
+  }
+
+
+/* El modo oscuro es el que va a ser predeterminado*/
+body.modo-oscuro {
+    background-color: #282E40;
+    color: #f1f1f1;
+}
+
+button.modo-oscuro {
+    background-color: #444;
+    color: #f1f1f1;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* Modo claro*/
+body.modo-claro {
+    background-color: #ffffff;
+    color: #333333;
+}
+
+button.modo-claro {
+    background-color: #ffffff;
+    color: #333333;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+/* transición de martinback*/
+.bg-martinback {
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+    width: 100%;
+}
+
+/* Desvanecido de fondo martinback*/
+.bg-martinback::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, #2C365E 2%, #282E40 98%);
+    z-index: -1;
+    transition: opacity 0.9s ease;
+    opacity: 0;
+}
+
+.bg-martinback::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, #A3CAFF 2%, #ffffff 98%);
+    z-index: -2;
+    transition: opacity 0.9s ease;
+    opacity: 0; 
+}
+
+body.modo-claro .bg-martinback::before {
+    opacity: 0; 
+}
+
+body.modo-claro .bg-martinback::after {
+    opacity: 1;
+}
+
+/* Estilos de bg-navback */
+.modo-oscuro .bg-navback {
+    background-color: #2C365E !important;
+}
+
+.modo-claro .bg-navback {
+    background-color: #A3CAFF !important;
+
+}
+
+.modo-claro a {
+    color: #282E40;
+}
+
+.modo-oscuro a {
+    color: #ffffff;
+}
+
+.modo-claro .nav-link {
+    color: #282E40 !important;
+}
+
+
+.modo-oscuro .nav-link {
+    color: #ffffff !important;
+}
+
+.modo-claro .fondoterminalc{
+    background-color: #30374E !important;
+}
+
+.modo-oscuro .fondoterminalc{
+    background-color: #181B26 !important;
+}
+
+
+body, .bg-navback, .bg-martinback, a {
+    transition: background-color 0.9s ease, color 0.9s ease;
+}
+
+.modo-oscuro .card {
+    background-color: #606e9933; 
+    border: 1px solid #ffffff4d;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border-radius: 0.25rem; 
+    box-shadow: 0 4px 6px #0000001a;
+    transition: all 0.3s ease-in-out; 
+  }
+
+.modo-claro .card{
+    background-color: #9fafdf33; 
+    border: 1px solid #b8c0d6; 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    border-radius: 0.25rem; 
+    box-shadow: 0 4px 6px #0000001a;
+    transition: all 0.3s ease-in-out; 
+}
+
+.modo-oscuro .bg-terminal{
+    background-color: #181B26 !important ;
+}
+
+.modo-claro .bg-terminal{
+    background-color: #1f2439 !important ;
+}
+
+.modo-claro .img-portfolio-med {
+  width: 33.6rem;
+  height: 17rem;
+  background-image: url("/images/projects/portfolio-claro.PNG"); 
+  background-size: cover;
+  background-position: center;
+}
+.img-portfolio-med:hover {
+  width: 33.6rem;
+  height: 17rem;
+  background-image: url("/images/projects/Portfolio\ MED.gif");
+  background-size: cover;
+  background-position: center;
+}
+
+.modo-oscuro .btn-primary {
+    color: #fff;
+    background-color: #606e99;
+  }
+.modo-oscuro .btn-primary:hover {
+    color: #fff;
+    background-color: #6d7ca8;
+    border-color: #6d7ca8;
+  }
+  .modo-oscuro .btn-primary.disabled,
+  .modo-oscuro .btn-primary:disabled {
+    color: #fff;
+    background-color: #3A425C;
+    border-color: #3A425C;
+  }
+  .modo-oscuro .btn-primary:not(:disabled):not(.disabled).active,
+  .modo-oscuro .btn-primary:not(:disabled):not(.disabled):active,
+  .modo-oscuro .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #414969;
+    border-color: #414969;
+  }
+
+.modo-claro .btn-primary {
+    color: #282e40;
+    background-color: #e8e8e8;
+    border-color: #cbcbcb;
+  }
+.modo-claro .btn-primary:hover {
+    color: #282e40;
+    background-color: #eff0f4;
+    border-color: #cbcbcb;
+  }
+  .modo-claro .btn-primary.disabled,
+  .modo-claro .btn-primary:disabled {
+    color: #fff;
+    background-color: #3A425C;
+    border-color: #3A425C;
+  }
+  .modo-claro .btn-primary:not(:disabled):not(.disabled).active,
+  .modo-claro .btn-primary:not(:disabled):not(.disabled):active,
+  .modo-claro .show > .btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #414969;
+    border-color: #414969;
+  }  
+  .btn-secondary {
+    color: #fff;
+    background-color: #6c757d33; 
+    border: 1px solid #ffffff4d; 
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    transition: all 0.3s ease-in-out; 
+  }
+  .btn-secondary:hover {
+    color: #fff;
+    background-color: #5a626866; 
+    border-color: #ffffff80; 
+  }
+  .btn-secondary.disabled,
+  .btn-secondary:disabled {
+    color: #fff;
+    background-color: #6c757d33;
+    border-color: #ffffff4d;
+  }
+  .btn-secondary:not(:disabled):not(.disabled).active,
+  .btn-secondary:not(:disabled):not(.disabled):active,
+  .show > .btn-secondary.dropdown-toggle {
+    color: #fff;
+    background-color: #31383f66;
+    border-color: #ffffff80;
+  }
+
+  .modo-claro .btn-secondary {
+  color: #333333;
+  background-color: #9fafdf33;
+  border: 1px solid #b8c0d6;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 0.25rem;
+  box-shadow: 0 4px 6px #0000001a;
+  transition: all 0.3s ease-in-out;
+}
+
+.modo-claro .btn-secondary:hover {
+  color: #333333;
+  background-color: #d7e0fc6d;
+  border-color: #a0accb;
+  box-shadow: 0 6px 8px #00000026;
+}
+
+.modo-claro .btn-secondary.disabled,
+.modo-claro .btn-secondary:disabled {
+  color: #fff;
+  background-color: #9fafdf33;
+  border-color: #b8c0d6;
+}
+
+.modo-claro .btn-secondary:not(:disabled):not(.disabled).active,
+.modo-claro .btn-secondary:not(:disabled):not(.disabled):active,
+.modo-claro .show > .btn-secondary.dropdown-toggle {
+  color: #333333;
+  background-color: #9fafdf66;
+  border-color: #a0accb;
+  box-shadow: 0 6px 8px #00000026;
+}
