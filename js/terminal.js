@@ -187,3 +187,15 @@ function handleCommand(command) {
   // Asegura que el scroll siempre esté abajo
   document.getElementById('terminal-content').scrollTop = document.getElementById('terminal-content').scrollHeight;
 }
+
+
+//        .o.                              oooo  M C
+//       .888.                             `888  E O
+//      .8"888.       oooooooo oooo  oooo   888  D R
+//     .8' `888.     d'""7d8P  `888  `888   888    O
+//    .88ooo8888.      .d8P'    888   888   888    N
+//   .8'     `888.   .d8P'  .P  888   888   888    A
+//  o88o     o8888o d8888888P   `V88V"V8P' o888o   D
+//                                                 O
+//                                               
+//                                               
