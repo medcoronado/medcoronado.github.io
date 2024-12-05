@@ -218,7 +218,7 @@
 
 .text-limit {
   display: inline-block;
-  max-width: 25rem;
+  max-width: 17rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
